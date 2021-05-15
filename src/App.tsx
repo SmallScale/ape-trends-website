@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
-  Button,
   Card,
   CardActions,
   CardContent,
   CardHeader,
   CircularProgress,
   Grid,
+  Link,
   Typography,
 } from "@material-ui/core";
 import axios from "axios";
@@ -19,14 +19,16 @@ const App: React.FC = () => {
 
   const fetchApeTrends = async (): Promise<void> => {
     const { data: apeTrends } = await axios.get<IndicatorCollection>(
-      "http://localhost:5000"
+      "https://plume-smart-milkshake.glitch.me"
     );
     setApeTrends(apeTrends);
     setLoading(false);
   };
 
   useEffect(() => {
-    fetchApeTrends();
+    if (!apeTrends) {
+      fetchApeTrends();
+    }
   });
 
   return (
@@ -34,7 +36,7 @@ const App: React.FC = () => {
       container
       justify="center"
       alignItems="center"
-      style={{ backgroundColor: "black" }}
+      style={{ backgroundColor: "black", minHeight: "100vh" }}
       spacing={2}
     >
       <Grid item>
@@ -64,10 +66,32 @@ const App: React.FC = () => {
               </Card>
             }
           />
-          <Typography variant="h5" component="h2" align="center">
-            COINS
-          </Typography>
           <CardContent>
+            <Card>
+              <Typography variant="h5" component="h2" align="center">
+                Want to know how often strangers on the internet mention
+                buying/selling/holding a crypto currency?
+              </Typography>
+              <Typography variant="body1" component="h2" align="center">
+                Look no further, we can get you all the data you need to make
+                incredibly poor decisions.
+              </Typography>
+              <Typography variant="body1" component="h2" align="center">
+                That is if that data can be found on{" "}
+                <Link
+                  href="https://www.reddit.com/r/CryptoCurrency/"
+                  component="a"
+                  target="_blank"
+                >
+                  r/CryptoCurrency.
+                </Link>
+              </Typography>
+              <Typography variant="caption" component="h2" align="center">
+                Data from other subreddits and social media platforms might come
+                soon or never!
+              </Typography>
+            </Card>
+            <div style={{ height: "2rem" }} />
             {loading || !apeTrends ? (
               <Grid container justify="center" alignItems="center" spacing={2}>
                 <Grid item>
@@ -80,7 +104,13 @@ const App: React.FC = () => {
           </CardContent>
 
           <CardActions>
-            <Button size="small">Learn More</Button>
+            <Link
+              href="https://github.com/SmallScale/ape-trends"
+              target="_blank"
+              component="a"
+            >
+              <Typography color="error">Learn More</Typography>
+            </Link>
           </CardActions>
         </Card>
       </Grid>
