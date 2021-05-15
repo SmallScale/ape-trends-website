@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/SmallScale/ape-trends-website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SmallScale/ape-trends-website/static/js/main.953922e7.chunk.js",
-    "main.js.map": "/SmallScale/ape-trends-website/static/js/main.953922e7.chunk.js.map",
-    "runtime-main.js": "/SmallScale/ape-trends-website/static/js/runtime-main.4fb02a5f.js",
-    "runtime-main.js.map": "/SmallScale/ape-trends-website/static/js/runtime-main.4fb02a5f.js.map",
-    "static/js/2.7601f86c.chunk.js": "/SmallScale/ape-trends-website/static/js/2.7601f86c.chunk.js",
-    "static/js/2.7601f86c.chunk.js.map": "/SmallScale/ape-trends-website/static/js/2.7601f86c.chunk.js.map",
-    "static/js/3.ff4a553a.chunk.js": "/SmallScale/ape-trends-website/static/js/3.ff4a553a.chunk.js",
-    "static/js/3.ff4a553a.chunk.js.map": "/SmallScale/ape-trends-website/static/js/3.ff4a553a.chunk.js.map",
-    "index.html": "/SmallScale/ape-trends-website/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/SmallScale/ape-trends-website/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.7601f86c.chunk.js.LICENSE.txt": "/SmallScale/ape-trends-website/static/js/2.7601f86c.chunk.js.LICENSE.txt"
+    "main.css": "/ape-trends-website/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ape-trends-website/static/js/main.953922e7.chunk.js",
+    "main.js.map": "/ape-trends-website/static/js/main.953922e7.chunk.js.map",
+    "runtime-main.js": "/ape-trends-website/static/js/runtime-main.f3f1d6bd.js",
+    "runtime-main.js.map": "/ape-trends-website/static/js/runtime-main.f3f1d6bd.js.map",
+    "static/js/2.7601f86c.chunk.js": "/ape-trends-website/static/js/2.7601f86c.chunk.js",
+    "static/js/2.7601f86c.chunk.js.map": "/ape-trends-website/static/js/2.7601f86c.chunk.js.map",
+    "static/js/3.ff4a553a.chunk.js": "/ape-trends-website/static/js/3.ff4a553a.chunk.js",
+    "static/js/3.ff4a553a.chunk.js.map": "/ape-trends-website/static/js/3.ff4a553a.chunk.js.map",
+    "index.html": "/ape-trends-website/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/ape-trends-website/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7601f86c.chunk.js.LICENSE.txt": "/ape-trends-website/static/js/2.7601f86c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fb02a5f.js",
+    "static/js/runtime-main.f3f1d6bd.js",
     "static/js/2.7601f86c.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
     "static/js/main.953922e7.chunk.js"
